@@ -8,7 +8,7 @@ Summary:	DBIx::Class::DynamicDefault - Automatically set and update fields
 Summary(pl.UTF-8):	DBIx::Class::DynamicDefault - Automatycznie ustawia i aktualizuje pola
 Name:		perl-DBIx-Class-DynamicDefault
 Version:	0.03
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
