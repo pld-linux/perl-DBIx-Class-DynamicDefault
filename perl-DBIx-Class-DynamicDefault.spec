@@ -7,19 +7,19 @@
 Summary:	DBIx::Class::DynamicDefault - Automatically set and update fields
 Summary(pl.UTF-8):	DBIx::Class::DynamicDefault - Automatycznie ustawia i aktualizuje pola
 Name:		perl-DBIx-Class-DynamicDefault
-Version:	0.03
-Release:	2
+Version:	0.04
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/DBIx/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	03c61f9916214d2aa16ae75943b111fa
-URL:		http://search.cpan.org/dist/DBIx-Class-DynamicDefault/
+Source0:	https://www.cpan.org/modules/by-module/DBIx/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	0f4ae1e7bc8a638f679922b387fbb011
+URL:		https://metacpan.org/dist/DBIx-Class-DynamicDefault
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl(DBICx::TestDatabase)
-BuildRequires:	perl-DBIx-Class >= 0.08009
+BuildRequires:	perl-DBIx-Class >= 0.08127
 BuildRequires:	perl-parent
 %endif
 BuildArch:	noarch
@@ -53,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc Changes
 %{perl_vendorlib}/DBIx/Class/*.pm
 %{_mandir}/man3/*
